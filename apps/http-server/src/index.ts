@@ -5,7 +5,7 @@ import { createUserSchema, loginUserSchema } from "@repo/common/types";
 import { middleware } from "./middleware";
 
 const app = express();
-const PORT = 5001;
+const PORT = 5002;
 
 app.post('/signup', (req, res) => {
   const data = createUserSchema.safeParse(req.body);
