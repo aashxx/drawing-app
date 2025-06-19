@@ -11,8 +11,8 @@ datasource db {
 model User {
   id          String      @id       @default(uuid())
   fullName    String
-  photo       String
-  email       String
+  photo       String?
+  email       String      @unique
   password    String
   rooms       Room[]
   chats       Chat[]
